@@ -23,8 +23,8 @@ steps:
     ScriptType: 'InlineScript'
     Inline: |
       # $Parameters = @{
-      #   ResourcegroupName     = "ARMDeploymentTest"
-      #   Templatefile          = ".\azuredeploy.json"
+      #   ResourcegroupName     = "brittle-hollow"
+      #   Templatefile          = ".\azureDeploy.json"
       #   Mode                  = 'Incremental'
       # }
       # $Result = Get-AzResourceGroupDeploymentWhatIfResult @Parameters
