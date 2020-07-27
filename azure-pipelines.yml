@@ -10,14 +10,6 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
-
 - task: PowerShell@2
   inputs:
     targetType: 'inline'
@@ -27,6 +19,7 @@ steps:
 
 - task: AzurePowerShell@5
   inputs:
+    azureSubscription: 'Contoso IT – SH360 – Prod(e93d3ee6-fac1-412f-92d6-bfb379e81af2)'
     ScriptType: 'InlineScript'
     Inline: |
       $Parameters = @{
