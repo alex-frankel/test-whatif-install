@@ -30,5 +30,6 @@ steps:
       # $Result = Get-AzResourceGroupDeploymentWhatIfResult @Parameters
       # $Result
       pwd
+      ls -a
     azurePowerShellVersion: 'LatestVersion'
 
